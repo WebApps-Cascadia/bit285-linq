@@ -10,6 +10,8 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+
+        //using procedural programming
         StudentsDatabaseDataContext studentDBC = new StudentsDatabaseDataContext();
         var allstudents = from MyStudent in studentDBC.Students where MyStudent.StudentID > 1 select MyStudent;
 
